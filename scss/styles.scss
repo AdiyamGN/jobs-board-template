@@ -131,7 +131,7 @@ h1 {
 		position: relative;
 		display: table;
 		z-index: 1;
-		width: 100%;
+		width: 93%;
 		
 		img, .info, .job-type {
 			display: table-cell;
@@ -250,3 +250,71 @@ h1 {
 		}
 	}
 }
+
+@media only screen and (max-width: 860px) {
+	.main-header {
+		margin: 3em 0;
+	}
+
+	.logo {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		img {
+			float: none;
+		}
+		h1 {
+			float: none;
+			margin: 0;
+			font-size: 1.1em;
+		}
+	}
+
+	.nav {
+		float: none;
+		text-align: center;
+		a {
+			margin: 0 0.5em;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#time-line {
+		width: 100%;
+		.listing {
+			.image-wrapper {
+				margin-right: 1em;
+				img {
+					width: 50px;
+				}
+			}
+			.info {
+				width: 100%;
+				padding: 0.4em 0 0 0;
+				.job-title {
+					font-size: 1.25em;
+				}
+			}
+			.job-type {
+				display: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	#time-line {
+		.listing {
+			.info {
+				.job-info {
+					font-size: 0.75em;
+					span {
+						margin: 0 0.5em;
+					}
+				}
+			}
+		}
+	}
+}
+
